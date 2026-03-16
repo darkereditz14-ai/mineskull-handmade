@@ -1,75 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MineSkull | Join</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body data-page="join">
-    <nav class="nav">
-      <div class="container nav-inner">
-        <a class="nav-logo" href="index.html" data-server-name>MineSkull</a>
-        <div class="nav-links">
-          <a class="nav-link" data-page="home" href="index.html">Home</a>
-          <a class="nav-link" data-page="features" href="features.html">Features</a>
-          <a class="nav-link" data-page="team" href="team.html">Team</a>
-          <a class="nav-link" data-page="join" href="join.html">Join</a>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Join | MineSkull</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo bungee serverName"></div>
+        <div class="nav-links"><a href="index.html">Home</a><a href="features.html">Features</a><a href="team.html">Team</a><a href="join.html" style="color: var(--primary)">Join</a></div>
     </nav>
-
-    <main class="page-content">
-      <header class="page-hero">
-        <div class="container section-header">
-          <h1 class="section-title">Join the Adventure</h1>
-          <p class="section-subtitle">
-            Connect to <span class="accent" data-server-name>MineSkull</span> in seconds and jump
-            straight into the action.
-          </p>
-        </div>
-      </header>
-
-      <section class="section">
-        <div class="container">
-          <div class="ip-bar">
-            <div class="ip-pill">
-              <span class="label">Server IP</span>
-              <span class="ip-text" data-server-ip>play.mineskull.fun</span>
+    <div class="container" style="max-width: 900px;">
+        <h1 class="bungee" style="text-align: center; margin-bottom: 2rem;">How to <span style="color: var(--primary)">Connect</span></h1>
+        <div class="card">
+            <div style="font-size: 1.4rem; line-height: 2;">
+                <p>1. Launch Minecraft <strong><span class="version"></span></strong></p>
+                <p>2. Select <strong>Multiplayer</strong></p>
+                <p>3. Click <strong>Add Server</strong></p>
+                <p>4. Type <span class="serverIP" style="color: var(--primary)"></span> in Server Address</p>
+                <p>5. Click <strong>Done</strong> and Join!</p>
             </div>
-            <button class="btn btn-outline" data-copy-ip>Copy IP</button>
-          </div>
-
-          <ol class="steps">
-            <li>Open Minecraft.</li>
-            <li>Click Multiplayer.</li>
-            <li>Select Add Server.</li>
-            <li>Enter the server IP above.</li>
-            <li>Join the server and start playing.</li>
-          </ol>
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-yellow" onclick="copyIP()">COPY IP ADDRESS</button>
+            </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div>
-          <strong data-server-name>MineSkull</strong>
-        </div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="features.html">Features</a>
-          <a href="team.html">Team</a>
-          <a href="join.html">Join</a>
-        </div>
-        <div class="footer-links">
-          <a data-discord-url href="#">Discord</a>
-        </div>
-        <div class="footer-copy" data-copyright>© 2026 MineSkull. All rights reserved.</div>
-      </div>
-    </footer>
-
-    <script src="config.js"></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <script src="config.js"></script><script src="script.js"></script>
+</body>
 </html>
